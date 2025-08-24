@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses – Tejas Classes</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site">
+  <div class="container nav">
+    <a class="logo" href="index.html"><img src="assets/logo.svg" alt=""> <strong>Tejas Classes</strong></a>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="courses.html" aria-current="page">Courses</a>
+      <a href="fees.html">Fees</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+    <!-- Biology -->
+    <div class="card block">
+      <h3>Biology</h3>
+      <p class="muted">By Kavita Singh</p>
+      <div class="disclosure">
+        <button data-disclosure="bio-more">Know more</button>
+        <div id="bio-more" class="content">
+          Concept-first approach with diagrams, mnemonics, and PYQs. Doubt clearing & periodic tests.
+        </div>
+      </div>
+      <a class="btn mt-3" href="fees.html">Read more</a>
+    </div>
+
+    <!-- Maths -->
+    <div class="card block">
+      <h3>Maths</h3>
+      <p class="muted">Batches starting 2026</p>
+      <div class="disclosure">
+        <button data-disclosure="math-more">Know more</button>
+        <div id="math-more" class="content">
+          Algebra, Calculus, Trigonometry with problem-solving drills and doubt sessions.
+        </div>
+      </div>
+      <a class="btn mt-3" href="fees.html">Read more</a>
+    </div>
+
+    <!-- Computer -->
+    <div class="card block">
+      <h3>Computer</h3>
+      <p class="muted">Batches starting 2026</p>
+      <div class="disclosure">
+        <button data-disclosure="comp-more">Know more</button>
+        <div id="comp-more" class="content">
+          Programming fundamentals, logic building, and practical projects.
+        </div>
+      </div>
+      <a class="btn mt-3" href="fees.html">Read more</a>
+    </div>
+
+    <!-- Physics -->
+    <div class="card block">
+      <h3>Physics</h3>
+      <p class="muted">Coming soon…</p>
+      <div class="disclosure">
+        <button data-disclosure="phy-more">Know more</button>
+        <div id="phy-more" class="content">
+          Conceptual understanding, numericals, and experiments to build intuition.
+        </div>
+      </div>
+      <a class="btn mt-3" href="fees.html">Read more</a>
+    </div>
+  </div>
+
+  <div class="container center mt-4">
+    <button class="btn" data-callback>Request a Call Back</button>
+  </div>
+</main>
+
+<footer class="footer center">
+  <div class="container">© <span id="year"></span> Tejas Classes</div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

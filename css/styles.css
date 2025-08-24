@@ -1,0 +1,171 @@
+/* =======================
+   LOGO STYLING
+   ======================= */
+.logo {
+  width: 130px;      /* logo width */
+  height: auto;      /* maintain aspect ratio */
+}
+
+/* =======================
+   HEADER LEFT (Logo + Title)
+   ======================= */
+
+.header-left {
+  display: flex;            /* place logo + title side by side */
+  align-items: center;      /* vertically align them */
+  gap: 10px;                /* space between logo and title */
+}
+
+/* =======================
+   SITE TITLE (Tejas Classes)
+   ======================= */
+.site-title {
+  font-size: 60px;          /* large heading size */
+  margin: 0;                /* remove browser default margin */
+  font-family: "Libre Caslon Text", serif; /* custom font */
+  font-weight: 500;         /* medium-bold */
+  position: relative;       
+  top: -9px;                /* move text slightly upward */
+} 
+
+/* =======================
+   ICONS (Insta, Facebook, Contact)
+   ======================= */
+.icon {
+  width: 50px;      /* icon size */
+  height: 50px;
+  margin-left: 15px; /* spacing between icons */
+  cursor: pointer;   /* pointer on hover */
+  /* CSS filter applied to recolor icons */
+  filter: invert(39%) sepia(66%) saturate(453%) hue-rotate(353deg) brightness(91%) contrast(85%);
+  transition: 0.3s;  /* smooth hover effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* zoom effect on hover */
+}
+
+/* =======================
+   HEADER RIGHT (Social Icons Container)
+   ======================= */
+.header-right a {
+  text-decoration: none;   /* remove default link underline */
+  color: inherit;          /* inherit text color */
+}
+
+.header-right {
+  display: flex;           /* align icons in a row */
+  align-items: center;     
+  gap: 20px;               /* space between icons */
+  margin-right: 65px;      /* push icons a little left */
+  margin-top: 5px;         /* slight vertical adjustment */
+}
+
+/* =======================
+   HEADER CONTAINER (Wrapper)
+   ======================= */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* left content stays left, right content stays right */
+  align-items: center;            /* vertically center all items */
+  padding: 0px 0px;               /* no extra padding */
+}
+
+/* =======================
+   INTRO SECTION (Kavita Singh + Paragraph)
+   ======================= */
+.intro {
+  text-align: left;             /* center text */
+  padding: 40px 20px;           /* spacing around section */
+  max-width: 900px;             /* limit width for readability */
+  margin: 40px 0 40px 0px;     /* top, right, bottom, left */
+  padding: 20px;                /* center section horizontally */
+}
+      
+
+/* =======================
+   INTRO HEADING (Name English + Hindi)
+   ======================= */
+.teacher-name {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* English Name */
+.name-en {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 300;
+  margin-right: 10px;  /* space between English and Hindi */
+}
+
+/* Hindi Name */
+.name-hi {
+  font-family: "Libre Caslon Text", serif; /* Hindi font */   
+  font-weight: 600;
+}
+
+/* =======================
+   INTRO PARAGRAPH (Quote Text)
+   ======================= */
+.teacher-quote {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  background-color: #f9f9f9;   /* light background inside box */
+  
+  border-radius: 8px;          /* rounded corners */
+  padding: 20px;               /* inner spacing */
+  margin-top: 20px; 
+}
+
+/* For math (if needed later) */
+.math-text {
+  font-family: "Libertinus Math", serif;
+}
+
+/* =======================
+   CO - FOUNER TEJAS CLASSES BELOW KAVITA SINGH
+   ======================= */
+
+.teacher-role {
+  font-size: 18px;         /* smaller than the main heading */
+  font-weight: 500;
+  color: #c26d2d;          /* custom orange/brown color */
+  margin-top: -10px;       /* pull it closer to the name */
+  margin-bottom: 20px;     /* space before paragraph */
+}
+
+/* Parent flexbox for text + image */
+.intro-container {
+  display: flex;
+  align-items: center;        /* vertically align text + image */
+  justify-content: space-between;
+  gap: 40px;                  /* spacing between text and image */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* LEFT TEXT stays same */
+.intro-text {
+  flex: 1;   /* takes available width */
+}
+
+/* RIGHT IMAGE BOX */
+.intro-image-box {
+  width: 443px;
+  height: 437.7px;
+  background-color: #ff6d4d;  /* solid background color */
+  border-radius: 20px;        /* curved edges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE INSIDE BOX */
+.intro-image {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid blue;     /* future: replace with #ff6d4d if needed */
+  border-radius: 12px;
+}
